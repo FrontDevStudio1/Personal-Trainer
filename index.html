@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Amilton Lucas" />
+    <meta name="creator" content="Front Dev Studio" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link
+      rel="shortcut icon"
+      href="src/imagens/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="src/js/index.js"></script>
+    <title>João Airton - Personal Trainer</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="">
+        <h1 class="logo">JA</h1>
+      </a>
+
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#mentoria">Mentoria</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home">
+        <div class="informacoes">
+          <h1>Olá! Sou João Airton</h1>
+          <p>
+            personal trainer apaixonado por ajudar as pessoas a alcançarem seus
+            objetivos de saúde e fitness.
+          </p>
+          <p>
+            Com vasta experiência e conhecimento em diversas áreas do
+            treinamento físico, ofereço um serviço personalizado e de alta
+            qualidade, focado nas necessidades individuais de cada cliente.
+          </p>
+          <ul class="redes-sociais">
+            <li>
+              <a
+                href="https://wa.me/5588921487525"
+                title="Enviar Mensagem no WhatsApp"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/joaoairtonpersonal/"
+                title="Ir para o Instagram"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="treinoI">
+            <li class="treinoIcon">
+              <a
+                href="https://app.tecnofit.com.br/signup?token=MTQzNTUy"
+                title="Peça seu treino"
+                target="_blank"
+              >
+                <i class="fa-solid fa-dumbbell"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="container-foto">
+          <div class="foto sombra-interna">
+            <img
+              src="./src/imagens/foto-perfil.png"
+              alt="foto do portfólio do João Airton"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="projetos" id="mentoria">
+        <h2 class="titulo">Faça já sua mentoria</h2>
+        <div class="container-projetos">
+          <div class="projeto ativo">
+            <img
+              src="./src/imagens/TricepsCorda.png"
+              alt="Projeto de ganho de massa magra"
+            />
+            <h3>Ganho de massa</h3>
+            <div class="informacoes-projeto">
+              <p>Mentoria especializada para ganho de massa magra</p>
+              <br />
+              <p>Treino, Dieta e Acompanhamento</p>
+            </div>
+          </div>
+        </div>
+        <button class="ButtonForm" id="openModalBtn1">EU QUERO!</button>
+
+        <div class="contactForm">
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <span id="closeModalBtn1" class="close">&times;</span>
+              <h2>Ganho de massa</h2>
+              <form id="treinoForm1">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required />
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required />
+
+                <label for="diaSemana">Plano</label>
+                <select id="diaSemana" name="diaSemana" required>
+                  <option value="três dias na semana">
+                    Três dias na semana R$ 140
+                  </option>
+                  <option value="Cinco dias na semana">
+                    Cinco dias na semana R$ 170
+                  </option>
+                </select>
+                <p><span style="color: red">Preço da mensalidade!</span></p>
+
+                <label for="horario">Horário:</label>
+                <select id="horario" name="horario" required>
+                  <option value="da manhã">Manhã</option>
+                  <option value="da tarde">Tarde</option>
+                  <option value="da noite">Noite</option>
+                </select>
+                <button class="buttonEnviar" type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projetos" id="mentoria">
+        <div class="container-projetos">
+          <div class="projeto ativo">
+            <img
+              src="src/imagens/PercaDeGordura.png"
+              alt="Projeto para perder gordura corporal"
+            />
+            <h3>Perca de gordura</h3>
+            <div class="informacoes-projeto">
+              <p>Mentoria especializada para perca de gordura corporal</p>
+              <br />
+              <p>Treino, Dieta e Acompanhamento</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="ButtonForm" id="openModalBtn2">EU QUERO!</button>
+
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <span id="closeModalBtn2" class="close">&times;</span>
+            <h2>Perca de gordura</h2>
+            <form id="treinoForm2">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome2" name="nome" required />
+
+              <label for="endereco">Endereço:</label>
+              <input type="text" id="endereco2" name="endereco" required />
+
+              <label for="diaSemana">Quantos dias na semana</label>
+              <select id="diaSemana2" name="diaSemana" required>
+                <option value="três dias na semana">
+                  Três dias na semana R$ 140
+                </option>
+                <option value="Cinco dias na semana">
+                  Cinco dias na semana R$ 170
+                </option>
+              </select>
+              <p>
+                <span style="color: red">Preço da mensalidade!</span>
+              </p>
+
+              <label for="horario">Horário:</label>
+              <select id="horario2" name="horario" required>
+                <option value="da manhã">Manhã</option>
+                <option value="da tarde">Tarde</option>
+                <option value="da noite">Noite</option>
+              </select>
+
+              <button class="buttonEnviar" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="projetosClientes" id="clientes">
+        <h2 class="titulo">Avaliações dos clientes</h2>
+        <div class="container-projetos">
+          <div class="projeto ativo">
+            <img src="src/imagens/pessoa-1.png" alt="foto de um cliente" />
+            <h3>
+              Wilson
+              <br />
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </h3>
+            <div class="informacoes-projeto">
+              <p>Professor nota 10</p>
+              <p>Só evolução!</p>
+            </div>
+          </div>
+
+          <div class="projeto ativo">
+            <img src="./src/imagens/pessoa-2.png" alt="Foto de um cliente" />
+            <h3>
+              Maria
+              <br />
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </h3>
+            <div class="informacoes-projeto">
+              <p>Execercícios top</p>
+              <p>Dieta e Acompanhamento muito bom</p>
+            </div>
+          </div>
+
+          <div class="projeto ativo">
+            <img src="./src/imagens/pessoa-3.png" alt="Foto de um cliente " />
+            <h3>
+              Arthur
+              <br />
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </h3>
+            <div class="informacoes-projeto">
+              <p>Professor muito massa</p>
+              <p>Treino de qualidade</p>
+            </div>
+          </div>
+
+          <div class="projeto ativo">
+            <img
+              src="./src/imagens/pessoa-4.png"
+              alt="Foto com grupo de clientes"
+            />
+            <h3>
+              Luciene Marlir e Maria
+              <br />
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </h3>
+            <div class="informacoes-projeto">
+              <p>Treino em grupo com as melhores</p>
+              <p>Professor muito gente boa</p>
+            </div>
+          </div>
+
+          <div class="projeto ativo">
+            <img
+              src="./src/imagens/pessoa-5.png"
+              alt="Foto com grupo de clientes"
+            />
+            <h3>
+              Ravy
+              <br />
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </h3>
+            <div class="informacoes-projeto">
+              <p>Treino Brabo nota 10</p>
+              <p>Dieta show</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/FrontDevStudio" target="_blank">
+        <h1>Desenvolvido por FrontDevStudio &copy;</h1>
+      </a>
+    </footer>
+  </body>
+</html>
